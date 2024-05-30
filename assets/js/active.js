@@ -32,8 +32,8 @@
             caption.removeClass('hide');
         });
 
-        // Product Carousel JS
-        $('.products-carousel').owlCarousel({
+        // shop Carousel JS
+        $('.shops-carousel').owlCarousel({
             items: 3,
             loop: true,
             dots: false,
@@ -64,8 +64,8 @@
             }
         });
 
-        // New Product Carousel JS
-        $('.new-products-carousel').owlCarousel({
+        // New shop Carousel JS
+        $('.new-shops-carousel').owlCarousel({
             items: 4,
             loop: true,
             dots: false,
@@ -102,8 +102,8 @@
             }
         });
 
-        // New Product Two Carousel JS
-        $('.new-products-carousel-two').owlCarousel({
+        // New shop Two Carousel JS
+        $('.new-shops-carousel-two').owlCarousel({
             items: 2,
             dots: false,
             nav: false,
@@ -133,7 +133,7 @@
             }
         });
 
-        // New Product Gallery Carousel JS
+        // New shop Gallery Carousel JS
         $('.new-pro-gallery-carousel').owlCarousel({
             items: 1,
             loop: true,
@@ -160,8 +160,8 @@
             autoPlay: true
         });
 
-        // Sale Product Carousel
-        $('.sale-product-carousel').owlCarousel({
+        // Sale shop Carousel
+        $('.sale-shop-carousel').owlCarousel({
             items: 1,
             loop: false,
             dots: false,
@@ -170,8 +170,8 @@
             navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
         });
 
-        // Home 4 Product Carousel
-        $('.products-categories-carousel').owlCarousel({
+        // Home 4 shop Carousel
+        $('.shops-categories-carousel').owlCarousel({
             items: 1,
             loop: true,
             dots: false,
@@ -180,8 +180,8 @@
             navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
         });
 
-        // Single Product  Carousel Js
-        $('.product-thumb-carousel').owlCarousel({
+        // Single shop  Carousel Js
+        $('.shop-thumb-carousel').owlCarousel({
             loop: true,
             items: 1,
             dots: false,
@@ -242,25 +242,25 @@
         // Nice Select Js
         $('select').niceSelect();
 
-        // Product View Style JS
-        var view_style_wrap = $('.shop-page-products-wrap > .products-wrapper');
+        // shop View Style JS
+        var view_style_wrap = $('.shop-page-shops-wrap > .shops-wrapper');
 
-        $('.product-view li.column-gird').on('click', function () {
-            view_style_wrap.removeClass('products-gird products-list-view');
+        $('.shop-view li.column-gird').on('click', function () {
+            view_style_wrap.removeClass('shops-gird shops-list-view');
         });
 
-        $('.product-view li.box-gird').on('click', function () {
-            view_style_wrap.addClass('products-gird');
-            view_style_wrap.removeClass('products-list-view');
+        $('.shop-view li.box-gird').on('click', function () {
+            view_style_wrap.addClass('shops-gird');
+            view_style_wrap.removeClass('shops-list-view');
         });
 
-        $('.product-view li.list').on('click', function () {
-            view_style_wrap.addClass('products-list-view');
-            view_style_wrap.removeClass('products-gird');
+        $('.shop-view li.list').on('click', function () {
+            view_style_wrap.addClass('shops-list-view');
+            view_style_wrap.removeClass('shops-gird');
         });
 
-        $('.product-view li').on('click', function () {
-            $('.product-view li').removeClass('current');
+        $('.shop-view li').on('click', function () {
+            $('.shop-view li').removeClass('current');
             $(this).addClass('current');
         });
 
@@ -283,8 +283,8 @@
         });
 
 
-        // Sale Products Countdown
-        $(".sale-product-countdown").each(function (index, element) {
+        // Sale shops Countdown
+        $(".sale-shop-countdown").each(function (index, element) {
             var $element = $(element),
                 $date = $element.data('date');
 
@@ -349,13 +349,13 @@
 }(jQuery));
 
 /* document.addEventListener("DOMContentLoaded", function() {
-    var productImage = document.getElementById("product-image");
-    var productLink = document.getElementById("product-link");
+    var shopImage = document.getElementById("shop-image");
+    var shopLink = document.getElementById("shop-link");
 
-    productImage.addEventListener("click", function() {
-        productImage.classList.add("blurred");
+    shopImage.addEventListener("click", function() {
+        shopImage.classList.add("blurred");
         setTimeout(function() {
-            window.location.href = productLink.href;
+            window.location.href = shopLink.href;
         }, 500); // Delay to let the blur effect appear before redirecting
     });
 });  */
